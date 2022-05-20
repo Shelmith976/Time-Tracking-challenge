@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: hsl(226, 43%, 10%);
+    color: white;
+    font-family: 'Rubik', sans-serif;
+}
+.container{
+    display: flex;
+
+    background-color: transparent;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+
+    
+}
+.content{
+    display: grid;
+    height: 70%;
+    width: 70%;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(2,13em);
+    grid-template-areas: 
+    "one two three four"
+    "one five six seven"
+    ;
+    padding: 3%;
+}
+.card{
+    margin-right: 5%;
+    border-radius: 14px;
+    display: flex;
+    background-color: hsl(235, 46%, 20%);
+    flex-direction: column;
+    margin-bottom: 5%;
+
+
+
+}
+/* .card:not(:first-child){ */
+    /* flex-direction:column-reverse;
+} */
+.card1{
+    background-color: hsl(235, 46%, 20%);
+
+    grid-area: one;
+}
+.card2{
+    background-color:  hsl(15, 100%, 70%);
+    grid-area: two;
+
+}
+.card3{
+    background-color:  hsl(195, 74%, 62%);
+    grid-area: three;
+
+}
+.card4{
+    background-color: hsl(348, 100%, 68%);
+    grid-area: four;
+
+}
+.card5{
+    background-color:  hsl(145, 58%, 55%);
+    grid-area: five;
+
+}
+.card6{
+    background-color: hsl(264, 64%, 52%);
+    grid-area: six;
+
+}
+.card7{
+    background-color:  hsl(43, 84%, 65%);
+    grid-area: seven;
+
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(246, 80%, 60%);
+    height: 70%;
+    border-radius: 12px;
+    gap: 10%;
+    padding: 8%;
+    
+
+}
+.profile img{
+   border: 2px solid white;
+   border-radius: 50%;
+
+    height: 55px;
+    width: 55px;
+
+}
+.profile .report{
+    font-weight: 300;
+
+
+}
+.profile .title{
+    font-weight: 500;
+
+
+}
+.routes{
+    background-color: hsl(235, 46%, 20%);
+    height: 30%;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    padding: 10%;
+
+}
+.routes li{
+    list-style: none;
+    
+}
+.routes li a{
+    text-decoration: none;
+    color: inherit;
+    font-weight: 400;
+
+}
+.title{
+    display: flex;
+    flex-direction: column;
+}
+.top{
+    height: 16%;
+}
+.bottom{
+    background-color: hsl(235, 46%, 20%);
+    height:89%;
+    border-radius: 10px;
+}
+.top img{
+    display: flex;
+    height: 50px;
+    margin-left: 70%;
+  
+    
+}
+.p-icon{
+    padding: 0.6em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.p-icon img{
+    padding-top: 5%;
+    height: 0.1%;
+
+}
+.time{
+    font-size: 3em;
+    padding: 0.4em;
+}
+.prev{
+    margin-left: 10px;
+}
+.card4 .top{
+    background-image: url(./images/icon-work.svg);
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: 5%;
+    margin-right:0.8em;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .container{
+width:100%;
+        
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    .content .card{
+        width: 100%;
+padding:0;
+margin:0;
+    }
+    .card{
+        margin: 5%;
+    }
+    .profile{
+        display: flex;
+        flex-direction: row;
+    }
+    .title{
+        display: flex;
+        flex-direction: row;
+        gap: 7%;
+    }
+   
+  
+    .routes{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+   
+
+}
